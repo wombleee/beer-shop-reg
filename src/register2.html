@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+        <title>Register Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Stardos Stencil' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="register2.css" type="text/css">
+</head>
+<body>
+   
+    <div id="container">
+         
+        <div id="wrapper">
+            <div id="headwrap">
+            <div id="header">Регистрация в пивном магазине</div>
+            </div>
+            <form id="valForm" method="POST" action="javascript:showPopup();" name="myForm" onsubmit="return validate()">
+                   
+                            <div class="field">
+                                <label>Имя:</label>
+                                    <input type="text" id="username"  name="Name" class="input"><div id="check" class="check"></div>
+                                    <div id="name_error" class="error"></div>
+                            </div>
+                    
+                                <div class="field">
+                                    <label>Адрес:</label>
+                                        <input type="text" id="adress" name="Adress" class="input"><div id="check2" class="check"></div>
+                                    
+                                        <div id="adress_error" class="error"></div>
+                                    </div>
+
+                            <div class="field">
+                                 <label>Город:</label>
+                                       <input type="text" id="city" name="City" class="input"><div id="check3" class="check"></div>
+                                 
+                                       <div id="city_error" class="error"></div>
+                                   </div>
+
+                             <div class="field">
+                            <label>Любимое пиво:</label>
+                        <select id="country" name="Country" class="input" >
+                            <option value="0">Сделайте выбор</option>
+                            <option value="1">Витязь</option>
+                            <option value="2">Темное</option>
+                            <option value="3">Светлое</option>
+                            <option value="4">ИПА</option>
+                            <option value="5">Стаут</option>
+                        </select><div id="check4" class="check"></div>
+                        
+                        <div id="country_error" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <label>E-mail:</label>  
+                        <input type="text" id="email" name="Email" class="input"><div id="check5" class="check"></div>
+                        
+                        <div id="email_error" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <label>Пароль:</label>
+                        <input type="password" id="password" name="Password" class="input pswd pass"><i class="fa fa-eye-slash" id="eye"></i>
+                        
+                        <div id="password_error" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <label>Подтвердите пароль:</label>
+                        <input type="text" id="confirmpassword" name="Confirmpassword" class="input pswd conf"><div id="check6" class="check"></div> 
+                        
+                        <div id="confirmpassword_error" class="error"></div>
+                        </div>
+                        <div id="bottomdiv">
+                            <button type="submit" value="Submit" class="btn" name="mySubmit"><span id="submit">Зарегестрироваться</span></button>
+                       </div>&#26;
+                    </form>
+                    </div>
+                </div>
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <div class="close">&times;</div>
+      <p class="text">Вы успешно зарегистрировались.</p>
+  </div>
+</div>
+    <script src="register2.js"></script>
+</body>
+</html>
